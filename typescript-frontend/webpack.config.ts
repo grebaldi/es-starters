@@ -20,17 +20,6 @@ const config: webpack.Configuration = {
 				use: {
 					loader: 'ts-loader'
 				}
-			},
-			{
-				test: /\.(png|jpg|gif)$/,
-				use: [
-					{
-						loader: 'file-loader',
-						options: {
-							name: 'images/[name]-[hash].[ext]'
-						}
-					}
-				]
 			}
 		]
 	},
