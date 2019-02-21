@@ -1,1 +1,0 @@
-{"version":3,"file":"static/webpack/static/development/pages/index.js.e7b40f2cacc7fb036b2a.hot-update.js","sources":["webpack:///./src/pages/index.tsx"],"sourcesContent":["import * as React from 'react';\n\nexport default () => (\n    <h1>Hello World!</h1>\n);"],"mappings":";;;;;;;;;;;;;;AAAA;AAEA;AAAA;AACA;AAAA;AAAA;AAAA;AAAA;AAAA;AADA;;;;A","sourceRoot":""}
