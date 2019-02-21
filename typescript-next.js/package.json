@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
+    "@types/next": "^8.0.1",
     "@types/node": "^10.12.18",
     "@types/react": "^16.8.4",
     "@zeit/next-typescript": "^1.1.1",
