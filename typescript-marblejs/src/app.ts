@@ -15,12 +15,12 @@ const helloWorld$ = EffectFactory
     ));
 
 const middlewares = [
-    bodyParser$,
-    logger$
+    bodyParser$(),
+    logger$()
 ];
 
 const effects = [
     helloWorld$
 ];
 
-export const app = httpListener({ middlewares, effects });
+export default httpListener({ middlewares, effects });

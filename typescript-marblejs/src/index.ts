@@ -1,4 +1,8 @@
+import { createContext } from "@marblejs/core";
 import { createServer } from "http";
-import { app } from "./app";
+import httpListener from "./app";
 
-export const httpServer = createServer(app).listen(3000);
+const httpListenerWithContext = httpListener
+    .run(createContext());
+
+export const httpServer = createServer(httpListenerWithContext).listen(3000);

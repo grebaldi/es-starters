@@ -1,5 +1,4 @@
-import { settings } from "pixi.js";
+import * as PIXI from "pixi.js";
 
-settings.SCALE_MODE = PIXI.SCALE_MODES.NEAREST;
-settings.PRECISION_FRAGMENT = 'highp';
-settings.RESOLUTION = 1;
+PIXI.settings.SCALE_MODE = PIXI.SCALE_MODES.NEAREST;
+PIXI.settings.RESOLUTION = 1;

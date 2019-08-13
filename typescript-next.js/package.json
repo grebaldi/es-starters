@@ -4,15 +4,15 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "@types/next": "^8.0.1",
-    "@types/node": "^10.12.18",
-    "@types/react": "^16.8.4",
+    "@types/next": "^8.0.6",
+    "@types/node": "^12.7.1",
+    "@types/react": "^16.9.1",
     "@zeit/next-typescript": "^1.1.1",
     "isomorphic-fetch": "^2.2.1",
-    "next": "^8.0.1",
-    "react": "^16.8.2",
-    "react-dom": "^16.8.2",
-    "ts-node": "^8.0.1",
-    "typescript": "^3.2.4"
+    "next": "^9.0.3",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.5.3"
   }
 }
