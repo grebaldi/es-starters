@@ -14,3 +14,6 @@ export TS_NODE_PROJECT := ./tsconfig.json
 ###############################################################################
 run:
 	@ts-node ./src/index.ts
+
+depcheck:
+	@depcheck $$(pwd) --ignore-bin-package --ignores="@types/*"

@@ -20,3 +20,6 @@ build:
 
 run:
 	@next start
+
+depcheck:
+	@depcheck $$(pwd) --ignore-bin-package --ignores="@types/*,react-dom" --ignore-dirs="dist"

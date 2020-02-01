@@ -13,7 +13,10 @@ outdated:
 	@$(MAKE) -s all command="yarn outdated"
 
 upgrade:
-	@$(MAKE) -s all command="yarn upgrade --all --lates"
+	@$(MAKE) -s all command="yarn upgrade --all --latest"
 
 build:
 	@$(MAKE) -s all command="make build"
+
+depcheck:
+	@$(MAKE) -s all command="make depcheck"

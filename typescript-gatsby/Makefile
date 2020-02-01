@@ -17,3 +17,6 @@ build:
 
 run:
 	@gatsby develop
+
+depcheck:
+	@depcheck $$(pwd) --ignore-bin-package --ignores="@babel/core,@types/*,gatsby-plugin-*" --ignore-dirs=".cache,public"

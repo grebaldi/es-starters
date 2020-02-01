@@ -17,3 +17,6 @@ run:
 
 compile:
 	@tsc
+
+depcheck:
+	@depcheck $$(pwd) --ignore-bin-package --ignores="@types/*"

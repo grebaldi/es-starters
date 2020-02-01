@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "license": "MIT",
   "devDependencies": {
-    "@types/node": "^12.7.1",
+    "@types/node": "^13.7.0",
     "@types/webpack": "^4.32.1",
     "@types/webpack-dev-server": "^3.1.7",
-    "file-loader": "^4.2.0",
+    "depcheck": "^0.9.2",
+    "file-loader": "^5.0.2",
     "ts-loader": "^6.0.4",
     "ts-node": "^8.3.0",
     "typescript": "^3.5.3",
@@ -15,7 +16,7 @@
     "webpack-dev-server": "^3.8.0"
   },
   "dependencies": {
-    "@types/pixi.js": "^4.8.8",
+    "@types/pixi.js": "^5.0.0",
     "pixi.js": "^5.1.1"
   }
 }

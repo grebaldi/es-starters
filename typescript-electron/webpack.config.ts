@@ -8,7 +8,7 @@ const common: webpack.Configuration = {
 	devtool: 'source-map',
 	node: { __dirname: false, __filename: false },
 	output: {
-		path: __dirname + '/dist',
+		path: __dirname + '/build',
 		publicPath: './'
 	},
 	module: {
