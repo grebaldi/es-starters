@@ -9,7 +9,7 @@ all:
 install:
 	@$(MAKE) -s all command="yarn"
 
-oudated:
+outdated:
 	@$(MAKE) -s all command="yarn outdated"
 
 upgrade:
