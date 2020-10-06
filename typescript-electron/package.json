@@ -13,7 +13,7 @@
         "@types/webpack": "^4.41.21",
         "chokidar": "^3.4.1",
         "depcheck": "^1.0.0",
-        "electron": "^9.1.1",
+        "electron": "^9.3.1",
         "electron-builder": "^22.7.0",
         "electron-devtools-installer": "^3.1.1",
         "html-webpack-plugin": "^4.3.0",
