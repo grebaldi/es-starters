@@ -1,0 +1,25 @@
+{
+  "name": "project-name",
+  "private": true,
+  "scripts": {
+    "postinstall": "lerna bootstrap",
+    "kickstart:app": "sh -c 'degit ${0} apps/${1}'",
+    "postkickstart:app": "lerna bootstrap",
+    "kickstart:module": "sh -c 'degit ${0} modules/${1}'",
+    "postkickstart:module": "lerna bootstrap",
+    "kickstart:package": "sh -c 'degit ${0} packages/${1}'",
+    "postkickstart:package": "lerna bootstrap"
+  },
+  "workspaces": [
+    "apps/*",
+    "modules/*",
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@types/node": "^15.6.0",
+    "degit": "^2.8.4",
+    "depcheck": "^1.4.1",
+    "lerna": "^4.0.0",
+    "typescript": "^4.2.4"
+  }
+}
