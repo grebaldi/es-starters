@@ -4,43 +4,43 @@ import styled from "styled-components";
 type Alignment = 'left' | 'center' | 'right';
 
 interface ButtonProps {
-    type: 'link' | 'submit' | 'button' | 'none',
-    alignment?: Alignment | 'auto',
-    className?: string,
-    href?: string,
-    children?: ReactNode
+  type: 'link' | 'submit' | 'button' | 'none',
+  alignment?: Alignment | 'auto',
+  className?: string,
+  href?: string,
+  children?: ReactNode
 }
 
 const ButtonContainer = styled.div<{ alignment: Alignment }>`
     display: flex;
     justify-content: ${props => props.alignment === 'left' ? 'flex-start' : (
-        props.alignment === 'right' ? 'flex-end' : 'center'
-    )};
+    props.alignment === 'right' ? 'flex-end' : 'center'
+  )};
 `;
 
 function Button(props: ButtonProps) {
-    const button = React.createElement(
-        props.type === 'link' ? 'a' : (
-            props.type === 'button' || props.type === 'submit' ?
-                'button' : 'span'
-        ),
-        {
-            className: props.className,
-            type: props.type === 'button' || props.type === 'submit' ? props.type : undefined,
-            href: props.type === 'link' ? props.href : undefined,
-            children: props.children
-        }
-    );
-
-    if (!props.alignment || props.alignment === 'auto') {
-        return button;
+  const button = React.createElement(
+    props.type === 'link' ? 'a' : (
+      props.type === 'button' || props.type === 'submit' ?
+        'button' : 'span'
+    ),
+    {
+      className: props.className,
+      type: props.type === 'button' || props.type === 'submit' ? props.type : undefined,
+      href: props.type === 'link' ? props.href : undefined,
+      children: props.children
     }
+  );
 
-    return (
-        <ButtonContainer alignment={props.alignment}>
-            {button}
-        </ButtonContainer>
-    );
+  if (!props.alignment || props.alignment === 'auto') {
+    return button;
+  }
+
+  return (
+    <ButtonContainer alignment={props.alignment}>
+      {button}
+    </ButtonContainer>
+  );
 }
 
 export default styled(Button)`

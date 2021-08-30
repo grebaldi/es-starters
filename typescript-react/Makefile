@@ -13,10 +13,10 @@ export TS_NODE_PROJECT := ./tsconfig.json
 #                               FRONTEND BUILD                                #
 ###############################################################################
 start:
-	@webpack-dev-server --mode development --open
+	@snowpack dev
 
 build:
-	@webpack --mode production
+	@snowpack build
 
 depcheck:
 	@depcheck $$(pwd) --ignore-bin-package --ignores="@types/*,ts-loader"
