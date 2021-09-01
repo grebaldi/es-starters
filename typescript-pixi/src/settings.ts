@@ -1,4 +1,4 @@
-import * as PIXI from "pixi.js";
+import { settings, SCALE_MODES } from "pixi.js";
 
-PIXI.settings.SCALE_MODE = PIXI.SCALE_MODES.NEAREST;
-PIXI.settings.RESOLUTION = 1;
+settings.SCALE_MODE = SCALE_MODES.NEAREST;
+settings.RESOLUTION = 1;
