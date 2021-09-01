@@ -13,10 +13,10 @@ export TS_NODE_PROJECT := ./tsconfig.json
 #                               FRONTEND BUILD                                #
 ###############################################################################
 start:
-	@snowpack dev
+	@vite
 
 build:
-	@snowpack build
+	@vite build
 
 depcheck:
 	@depcheck $$(pwd) --ignore-bin-package --ignores="@types/*,ts-loader"
