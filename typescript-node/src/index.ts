@@ -1,1 +1,5 @@
-process.stdout.write(`Hello World!\n`);
+async function main() {
+  process.stdout.write(`Hello World!\n`);
+}
+
+main();
