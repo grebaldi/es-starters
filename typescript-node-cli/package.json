@@ -23,6 +23,7 @@
     "winston": "^3.3.3"
   },
   "devDependencies": {
-    "depcheck": "^1.4.2"
+    "depcheck": "^1.4.2",
+    "prettier": "^2.3.2"
   }
 }
