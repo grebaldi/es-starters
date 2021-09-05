@@ -1,32 +1,40 @@
 {
   "compilerOptions": {
-    "noImplicitAny": true,
-    "esModuleInterop": true,
-    "module": "esnext",
-    "target": "ES2015",
-    "jsx": "preserve",
     "baseUrl": "./",
+    "module": "ES2020",
+    "target": "ES2015",
     "moduleResolution": "node",
-    "experimentalDecorators": true,
-    "strictNullChecks": true,
-    "downlevelIteration": true,
+    "jsx": "preserve",
     "lib": [
       "ES2020",
-      "DOM"
+      "DOM",
+      "DOM.Iterable"
     ],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
     "noEmit": true,
+    "strict": true,
+    "sourceMap": true,
+    "esModuleInterop": true,
     "resolveJsonModule": true,
-    "isolatedModules": true
+    "declarationMap": true,
+    "composite": true,
+    "exactOptionalPropertyTypes": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "importsNotUsedAsValues": "error",
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "skipLibCheck": true,
+    "allowJs": true
   },
   "exclude": [
     "node_modules"
   ],
   "include": [
-    "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
   ]
