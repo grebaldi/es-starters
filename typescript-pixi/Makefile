@@ -20,3 +20,7 @@ build:
 
 depcheck:
 	@depcheck $$(pwd) --ignore-bin-package --ignores="@types/*,ts-loader,file-loader"
+
+healthcheck:
+	@tsc --noEmit && echo "Typecheck: ✓"
+	@$(MAKE) build
