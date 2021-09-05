@@ -23,3 +23,7 @@ run:
 
 depcheck:
 	@depcheck $$(pwd) --ignore-bin-package --ignores="@types/*,react-dom" --ignore-dirs="dist"
+
+healthcheck:
+	@tsc --noEmit && echo "Typecheck: ✓"
+	@$(MAKE) build
