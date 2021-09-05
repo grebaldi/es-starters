@@ -17,3 +17,9 @@ run:
 
 depcheck:
 	@depcheck $$(pwd) --ignore-bin-package --ignores="@types/*"
+
+healthcheck:
+	@tsc --noEmit && echo "Typecheck: ✓"
+
+	@echo "Running program:"
+	@$(MAKE) run
