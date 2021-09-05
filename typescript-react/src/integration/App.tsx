@@ -1,13 +1,13 @@
-import React, { Component } from "react";
+import React from "react";
 
 import AppTemplate from "../presentation/template/AppTemplate";
 
-export default class App extends Component {
-  render() {
-    return (
-      <AppTemplate>
-        <h1>Hello World</h1>
-      </AppTemplate>
-    );
-  }
+const App: React.FC = () => {
+  return (
+    <AppTemplate>
+      <h1>Hello World</h1>
+    </AppTemplate>
+  );
 }
+
+export default App;

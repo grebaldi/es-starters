@@ -1,19 +1,40 @@
 {
   "compilerOptions": {
-    "strict": true,
     "outDir": "./dist/",
-    "sourceMap": true,
-    "noImplicitAny": true,
-    "esModuleInterop": true,
-    "module": "commonjs",
-    "target": "ES2015",
-    "jsx": "react",
     "baseUrl": "./",
+    "module": "ES2020",
+    "target": "ES2015",
     "moduleResolution": "node",
-    "downlevelIteration": true,
+    "jsx": "react",
     "lib": [
       "ES2020",
-      "DOM"
-    ]
-  }
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "strict": true,
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "declarationMap": true,
+    "composite": true,
+    "exactOptionalPropertyTypes": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "importsNotUsedAsValues":"error",
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "skipLibCheck": true
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "**/*.ts",
+    "**/*.tsx"
+  ]
 }
