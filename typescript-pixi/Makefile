@@ -1,5 +1,5 @@
 #
-# @author Wilhelm Behncke <behncke@sitegeist.de>
+# @author Wilhelm Behncke <wilhelm.behncke@openformation.io>
 #
 
 ###############################################################################
