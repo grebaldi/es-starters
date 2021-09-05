@@ -20,3 +20,6 @@ build:
 
 depcheck:
 	@$(MAKE) -s all command="make depcheck"
+
+healthcheck:
+	@$(MAKE) -s all command="make healthcheck"
