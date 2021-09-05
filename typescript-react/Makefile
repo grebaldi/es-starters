@@ -19,4 +19,8 @@ build:
 	@vite build
 
 depcheck:
-	@depcheck $$(pwd) --ignore-bin-package --ignores="@types/*,ts-loader"
+	@depcheck $$(pwd) --ignore-bin-package --ignores="@types/*"
+
+healthcheck:
+	@tsc --noEmit && echo "Typecheck: ✓"
+	@$(MAKE) build
