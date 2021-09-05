@@ -9,6 +9,9 @@ all:
 install:
 	@$(MAKE) -s all command="yarn"
 
+audit:
+	@$(MAKE) -s all command="yarn audit"
+
 outdated:
 	@$(MAKE) -s all command="yarn outdated"
 
